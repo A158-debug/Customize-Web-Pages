@@ -2,19 +2,12 @@ import React from 'react'
 import Fliga_logo from './images/Fliga_logo.png'
 import image5 from './images/image5.png'
 import Group1img1 from './images/Group1img1.png'
-import Group2img1 from './images/Group2img1.png'
-import Group2img2 from './images/Group2img2.png'
-import Group2img3 from './images/Group2img3.png'
-import Group2img4 from './images/Group2img4.png'
-import Group2img5 from './images/Group2img5.png'
 import Group1img3 from './images/Group1img3.png'
 import Group1img4 from './images/Group1img4.png'
 import Group1img5 from './images/Group1img5.png'
 import photography from './images/photography.png'
 import photography_upper from './images/photography_upper.png'
-import Rectangle208 from './images/Rectangle208.png'
-import Rectangle209 from './images/Rectangle209.png'
-import Group4img1 from './images/Group4img1.png'
+
 import Group3img1 from './images/Group3img1.png'
 import Group5img1 from './images/Group5img1.png'
 import Group5img2 from './images/Group5img2.png'
@@ -26,12 +19,16 @@ import Group7logo from './images/Group7logo.png'
 import Group9img1 from './images/Group9img1.png'
 import Arrow1 from './images/Arrow1.png'
 
+import Footer from './components/Footer'
+import Sponsors from './components/Sponsors'
+import Awards from './components/Awards'
+
 
 const App = () => {
   return (
     <>
       {/*--------- Navbar ----------*/}
-      <div className="text-white" style={{
+      {/* <div className="text-white" style={{
         background: "#131514",
         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
       }}>
@@ -71,10 +68,10 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div >
+      </div > */}
 
       {/*--------- Image ---------- */}
-      <div className="flex">
+      {/* <div className="flex">
         <img src={image5} alt="" />
       </div>
 
@@ -131,10 +128,10 @@ const App = () => {
           <div className="h-px bg-black w-11/12 mt-10"></div>
         </div>
 
-      </div>
+      </div> */}
 
       {/* -------- Find Trusted Associate ------------*/}
-      <div className="flex flex-col flex-wrap p-3" style={{ background: '#A1E3D8' }}>
+      {/* <div className="flex flex-col flex-wrap p-3" style={{ background: '#A1E3D8' }}>
         <div className="basis-2/12 flex flex-row justify-between p-2 ">
           <div className="p-2 ">
             <p>Find Trusted Associate</p>
@@ -187,10 +184,10 @@ const App = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       {/*--------- Our Featured Services ---------- */}
-      <div className="flex flex-col p-4 flex-wrap">
+      {/* <div className="flex flex-col p-4 flex-wrap">
         <div className="basis-2/12 p-3 my-2">
           <p style={{ color: '#4C696D', lineHeight: '42px' }} className="text-4xl">Our Featured Services </p>
           <p>Discover the range of services provided by FliqaIndia</p>
@@ -251,9 +248,9 @@ const App = () => {
        
 
         </div>
-      </div>
+      </div> */}
       
-      <div className="flex flex-col flex-wrap p-2 " style={{background: '#DDF8F3'}}>
+      {/* <div className="flex flex-col flex-wrap p-2 " style={{background: '#DDF8F3'}}>
         <div className="flex basis-2/12">
           <div>
             <p>Our Blogs</p>
@@ -271,7 +268,7 @@ const App = () => {
               <p>View All</p>
             </div>
             <div className="basis-10/12 flex flex-col flex-wrap">
-              <div className="flex flex justify-center content-center">
+              <div className="flex flex-row justify-center content-center">
                   <img src={Group9img1} alt=""  className="w-32"/>
                   <div>
                     <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam a placeat quae repellendus animi eius minima quibusdam dolor impedit ipsa?</p>
@@ -292,11 +289,11 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       {/*--------- Real wedding ---------- */}
-      <div className="flex flex-col p-4 flex-wrap">
+      {/* <div className="flex flex-col p-4 flex-wrap">
         <div className="basis-2/12 p-3 my-2">
           <p style={{ color: '#4C696D', lineHeight: '42px' }} className="text-4xl">Real Wedding</p>
           <p>List your wedding and browse portfolio</p>
@@ -342,10 +339,10 @@ const App = () => {
           <p className="text-xl">View more weddings</p>
           <img src={Arrow1} alt="" className="px-3" />
         </div>
-      </div>
+      </div> */}
 
       {/*--------- Horizontal Line ---------- */}
-      <div className="flex flex-row justify-center mb-10">
+      {/* <div className="flex flex-row justify-center mb-10">
         <div className="h-px bg-black w-11/12 mt-10"></div>
       </div>
 
@@ -409,118 +406,22 @@ const App = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-row flex-wrap" style={{ background: '#DDF8F3', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: '98%', margin: '2rem auto', padding: '3rem' }}>
-        <div className="basis-1/2 flex flex-row  justify-around content-center  flex-wrap" style={{ background: '#4E99A4', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px', padding: '2rem' }}>
-          <img src={Rectangle208} alt="" className="w-60 h-30" />
-          <img src={Rectangle209} alt="" className="w-60 h-30" />
-        </div>
-        <div className="basis-1/2 flex flex-row flex-wrap">
-          <div className="basis-1/2 flex flex-col justify-center content-center p-5 gap-y-3">
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
+   
 
 
-          </div>
-          <div className="basis-1/2 flex flex-col justify-center content-center p-5 gap-y-3">
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
-            <div className="basis-1/3 flex flex-row justify-around " style={{ background: '#FFFFFF', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '10px' }}>
-              <img src={Group4img1} alt="" />
-              <span className="self-center">4.9/5</span>
-            </div>
-
-
-          </div>
-
-
+      <Awards/>
+      <Sponsors/>
+      <div className="photography relative">
+        <img src={photography} alt="" />
+        <img src={photography_upper} alt="" className="photography-upper absolute  left-2/4"/>
+        <div className="absolute top-20 left-10  text-white sm:block hidden ">
+          <p className="lg:text-5xl md:text-2xl sm:text-sm">ULTIMATE COURSE IN</p>
+          <p className="lg:text-5xl md:text-2xl sm:text-sm">PHOTOGRAPHY</p>
         </div>
       </div>
-
-
-      <div className="flex flex-col justify-center content-center  " style={{
-        background: '#ACCBC7', boxShadow: '0px 9px 19px rgba(0, 0, 0, 0.25)',
-        borderRadius: '10px', padding: '2rem', margin: '3rem auto', width: '98%'
-      }}>
-        <div className="flex flex-col justify-center content-center" style={{ margin: '2rem auto' }}>
-          <h2 className="text-center" style={{ color: '#4C696D', lineHeight: '45px', fontFamily: 'Itoya-Bold', fontSize: '3rem' }}>Our Success</h2>
-          <p className="text-center">Journey of our success.</p>
-        </div>
-        <div className="flex flex-row justify-center content-center  gap-x-7 flex-wrap  font-normal"
-          style={{ lineHeight: '19px' }}>
-          <div className="basis-2/12">
-            <div className="">
-              <div className="flex flex-col justify-center content-center h-60  bg-white border" style={{ borderRadius: '50%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <img src={Group2img1} alt="" className="w-30 h-30 self-center" />
-              </div>
-              <p className="text-center p-2">Back in 2019, FliqaIndia recognize as a startup with DPIT in Startup India.</p>
-            </div>
-
-          </div>
-          <div className="basis-2/12">
-            <div className="">
-              <div className="flex flex-col justify-center content-center h-60  bg-white border" style={{ borderRadius: '50%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <img src={Group2img4} alt="" className="w-30 h-30 self-center" />
-              </div>
-              <p className="text-center p-2">Back in 2019, FliqaIndia recognize as a startup with DPIT in Startup India.</p>
-            </div>
-
-          </div>
-          <div className="basis-2/12">
-            <div className="">
-              <div className="flex flex-col justify-center content-center h-60  bg-white border" style={{ borderRadius: '50%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <img src={Group2img4} alt="" className="w-30 h-30 self-center" />
-              </div>
-              <p className="text-center p-2">Back in 2019, FliqaIndia recognize as a startup with DPIT in Startup India.</p>
-            </div>
-
-          </div>
-          <div className="basis-2/12">
-            <div className="">
-              <div className="flex flex-col justify-center content-center h-60  bg-white border" style={{ borderRadius: '50%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <img src={Group2img2} alt="" className="w-30 h-30 self-center" />
-              </div>
-              <p className="text-center p-2">Back in 2019, FliqaIndia recognize as a startup with DPIT in Startup India.</p>
-            </div>
-
-          </div>
-          <div className="basis-2/12">
-            <div className="">
-              <div className="flex flex-col justify-center content-center h-60  bg-white border" style={{ borderRadius: '50%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <img src={Group2img3} alt="" className="w-30 h-30 self-center" />
-              </div>
-              <p className="text-center p-2">Back in 2019, FliqaIndia recognize as a startup with DPIT in Startup India.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div className="relative top-0 left-0">
-        <img src={photography} alt="" className="relative top-0 left-0" />
-        <img src={photography_upper} alt="" className="absolute top-20 left-2/4" />
-        <div className="absolute top-20 left-1/4 text-white ">
-          <p>ULTIMATE COURSE IN</p>
-          <p>PHOTOGRAPHY</p>
-        </div>
-      </div>
+      <Footer/>
     </>
   )
 }
