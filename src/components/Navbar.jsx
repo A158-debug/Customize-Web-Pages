@@ -1,10 +1,21 @@
 import React from "react";
 import Fliga_logo from "../images/Fliga_logo.png";
 import Group1img1 from "../images/Group1img1.png";
-import Group1img3 from "../images/Group1img3.png";
+import Group1img2 from "../images/Group1img2.png";
 import Group1img4 from "../images/Group1img4.png";
 import Group1img5 from "../images/Group1img5.png";
-import image5 from '../images/image5.png'
+import image5 from "../images/image5.png";
+
+const Cards = [
+  { img: Group1img1, des1: "Verified Reviews", des2: "For verified reviewers" },
+  { img: Group1img2, des1: "Top Articles", des2: "Helps you decide" },
+  {
+    img: Group1img4,
+    des1: "Write Share Win Contest",
+    des2: "Earn Cash for reviews",
+  },
+  { img: Group1img5, des1: "MouthShut for Brands", des2: "Request a demo" },
+];
 
 const Navbar = () => {
   return (
@@ -16,15 +27,15 @@ const Navbar = () => {
           boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
         }}
       >
-        <div className="flex flex-row flex-wrap">
+        <div className="md:flex md:flex-row sm:flex sm:flex-col flex-wrap">
           <div class="basis-2/12 flex flex-row flex-wrap justify-center content-center">
             <img
               src={Fliga_logo}
               alt="Fliga_logo"
-              className="h-16 my-3 cursor-pointer"
+              className="h-16 my-3 cursor-pointer "
             />
           </div>
-          <div class="basis-6/12 flex flex-row flex-wrap justify-around items-center text-lg tracking-wide ">
+          <div class="basis-6/12 flex flex-row flex-wrap justify-around items-center text-lg tracking-wide py-2 px-3  gap-x-5">
             <div className="menu cursor-pointer hover:text-zinc-400">
               <p>Home</p>
             </div>
@@ -41,9 +52,9 @@ const Navbar = () => {
               <p>Blog</p>
             </div>
           </div>
-          <div class="basis-4/12 flex flex-row justify-end content-center items-center pr-8">
+          <div class="basis-4/12 flex flex-row justify-center content-center items-center pr-8">
             <div
-              className="cursor-pointer py-2 px-5 mr-10 rounded-lg hover:text-zinc-400"
+              className="cursor-pointer py-2 px-5 mr-10 sm:my-2 md:my-0 rounded-lg hover:text-zinc-400"
               style={{
                 background:
                   "linear-gradient(180deg, rgba(78, 153, 164, 0.95) 0%, #004D58 100%)",
@@ -66,6 +77,7 @@ const Navbar = () => {
       <div className="flex">
         <img src={image5} alt="" />
       </div>
+
       <div className="flex flex-col justify-center content-center mt-4">
         <div className="my-5">
           <p
@@ -93,7 +105,12 @@ const Navbar = () => {
           </p>
         </div>
         <div className="my-10 text-center">
-          <input type="text" className="w-4/12 h-8 border-r-none" />
+          <input
+            type="text"
+            className="w-4/12 h-8 border-2 rounded-l-lg p-2"
+            placeholder="Search service, blog and many more…
+"
+          />
           <button
             className="text-white py-2 px-4 w-40"
             style={{
@@ -105,36 +122,18 @@ const Navbar = () => {
             Search
           </button>
         </div>
-        <div className="flex flex-row justify-around content-center flex-wrap gap-y-5">
-          <div className="justify-center content-center  flex flex-row ">
-            <img src={Group1img3} alt="" className="h-20" />
-            <div className="self-center pl-3">
-              <p className="">Verified Reviews</p>
-              <p>For verified reviewers</p>
+        <div className="sm:flex sm:flex-col md:flex md:flex-row justify-around content-center flex-wrap gap-y-5">
+          {Cards.map((e) => (
+            <div className="justify-around content-center  flex flex-row p-2">
+              <img src={e.img} alt="" className="h-20" />
+              <div className="self-center pl-3 ">
+                <p className="text-2xl font-semibold">{e.des1}</p>
+                <p>{e.des2}</p>
+              </div>
             </div>
-          </div>
-          <div className="justify-center content-center  flex flex-row ">
-            <img src={Group1img3} alt="" className="h-20" />
-            <div className="self-center pl-3">
-              <p className="">Verified Reviews</p>
-              <p>For verified reviewers</p>
-            </div>
-          </div>
-          <div className="justify-center content-center  flex flex-row ">
-            <img src={Group1img3} alt="" className="h-20" />
-            <div className="self-center pl-3">
-              <p className="">Verified Reviews</p>
-              <p>For verified reviewers</p>
-            </div>
-          </div>
-          <div className="justify-center content-center  flex flex-row ">
-            <img src={Group1img3} alt="" className="h-20" />
-            <div className="self-center pl-3">
-              <p className="">Verified Reviews</p>
-              <p>For verified reviewers</p>
-            </div>
-          </div>
+          ))}
         </div>
+
         <div className="flex flex-row justify-center my-10">
           <div className="h-px bg-black w-11/12 mt-10"></div>
         </div>
